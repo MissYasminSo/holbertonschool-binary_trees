@@ -53,3 +53,7 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# other
+main.c
+binary_tree_print.c
