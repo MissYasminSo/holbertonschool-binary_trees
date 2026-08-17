@@ -2,8 +2,7 @@
 
 /**
  * binary_tree_delete - delete tree from parent
- * @parent: parent node
- * @value: value of node
+ * @tree: tree to delete
  *
  * Return: address to the created node, NULL otherwise
  */
