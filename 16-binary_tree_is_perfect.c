@@ -117,5 +117,20 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 		return (0);
 	}
 
+	if (tree->left == NULL && tree->right == NULL)
+	{
+		return (1);
+	}
+
+	if (tree->left == NULL || tree->right == NULL)
+	{
+		return (0);
+	}
+
+	if (binary_tree_height(tree->left) != binary_tree_height(tree->right))
+	{
+		return (0);
+	}
+
 	return (binary_tree_is_full(tree) && binary_tree_balance(tree) == 0);
 }
