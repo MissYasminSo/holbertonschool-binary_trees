@@ -132,5 +132,6 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 		return (0);
 	}
 
-	return (binary_tree_is_full(tree) && binary_tree_balance(tree) == 0);
+	return (binary_tree_is_full(tree->left)
+		&& binary_tree_balance(tree->right) == 0);
 }
